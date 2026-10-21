@@ -1,0 +1,11 @@
+default_model = "orbis-deepseek"
+
+[providers.orbis]
+type = "openai"
+base_url = "https://api.orbiorbi.com/v1"
+api_key_env = "ORBIS_API_KEY"
+
+[models.orbis-deepseek]
+provider = "orbis"
+model = "deepseek-v4.1-flash"
+max_context_size = 128000
